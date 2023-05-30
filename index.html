@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD de Produtos</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>CRUD de Produtos</h1>
+  
+  <div id="formulario">
+    <h2>Cadastrar Produto</h2>
+    <form id="produtoForm">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required>
+      
+      <label for="preco">Preço:</label>
+      <input type="number" id="preco" step="0.01" required>
+      
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+  
+  <div id="listaProdutos">
+    <h2>Lista de Produtos</h2>
+    <ul id="produtoList"></ul>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
